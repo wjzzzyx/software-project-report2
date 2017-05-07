@@ -1,0 +1,104 @@
+\chapter{任务概述}
+本系统的目标是实现一个ETS考试与管理系统，包括客户端、服务器端两个部分。
+
+客户端面向考生用户，为用户提供账号注册、考位查询、缴费、考试报名、成绩查询等服务。
+服务器端面向ETS管理员用户，为用户提供考试信息发布、题库维护、试题发布、试卷分发及测试、试卷批改等服务。
+
+\section{目标}
+实现ETS考试与管理系统，实现需求规格说明书中所描述的面向考生用户和面向ETS管理员用户的各个功能，并且保证系统的健壮性和数据安全。
+
+\section{开发与运行环境}
+
+\subsection{开发环境的配置}
+\begin{table}[htbp]
+\centering
+\caption{开发环境的配置} \label{tab:development-environment}
+\begin{tabular}{|c|c|c|}
+    \hline
+    类别 & 标准配置 & 最低配置 \\
+    \hline
+    计算机硬件 & \tabincell{c}{基于x86结构的CPU\\ 主频>=2.4GHz\\ 内存>=8G\\ 硬盘>=200G} & \tabincell{c}{基于x86结构的CPU\\ 主频>=1.6GHz\\ 内存>=512M\\ 硬盘>=2G} \\
+    \hline
+    计算机软件 & \tabincell{c}{Linux (kernel version>=4.10)\\ GNU gcc (version>=6.3.1)} & \tabincell{c}{Linux (kernel version>=3.10)\\ GNU gcc (version>=5.4)} \\
+    \hline
+    网络通信 & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} \\
+    \hline
+    其他 & 采用Oracle数据库 & 采用Oracle数据库 \\
+    \hline
+\end{tabular}
+% \note{这里是表的注释}
+\end{table}
+
+\subsection{测试环境的配置}
+\begin{table}[htbp]
+\centering
+\caption{测试环境的配置} \label{tab:test-environment}
+\begin{tabular}{|c|c|c|}
+    \hline
+    类别 & 标准配置 & 最低配置 \\
+    \hline
+    计算机硬件 & \tabincell{c}{基于x86结构的CPU\\ 主频>=2.4GHz\\ 内存>=8G\\ 硬盘>=200G} & \tabincell{c}{基于x86结构的CPU\\ 主频>=1.6GHz\\ 内存>=512M\\ 硬盘>=2G} \\
+    \hline
+    计算机软件 & \tabincell{c}{Linux (kernel version>=4.10)\\ GNU gcc (version>=6.3.1)} & \tabincell{c}{Linux (kernel version>=3.10)\\ GNU gcc (version>=5.4)} \\
+    \hline
+    网络通信 & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} \\
+    \hline
+    其他 & 采用Oracle数据库 & 采用Oracle数据库 \\
+    \hline
+
+\end{tabular}
+% \note{这里是表的注释}
+\end{table}
+
+\subsection{运行环境的配置}
+\begin{table}[htbp]
+\centering
+\caption{运行环境的配置} \label{tab:operation-environment}
+\begin{tabular}{|c|c|c|}
+    \hline
+    类别 & 标准配置 & 最低配置 \\
+    \hline
+    计算机硬件 & \tabincell{c}{基于x86结构的CPU\\ 主频>=2.4GHz\\ 内存>=16G\\ 硬盘>=16T} & \tabincell{c}{基于x86结构的CPU\\ 主频>=1.6GHz\\ 内存>=8G\\ 硬盘>=1T} \\
+    \hline
+    计算机软件 & \tabincell{c}{Linux (kernel version>=4.10)\\ GNU gcc (version>=6.3.1)} & \tabincell{c}{Linux (kernel version>=3.10)\\ GNU gcc (version>=5.4)} \\
+    \hline
+    网络通信 & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} & \tabincell{c}{至少要有一块可用网卡\\ 能运行IP协议栈即可} \\
+    \hline
+    其他 & 采用Oracle数据库 & 采用Oracle数据库 \\
+    \hline
+
+\end{tabular}
+% \note{这里是表的注释}
+\end{table}
+
+\section{需求概述}
+功能需求包括：
+
+供考生使用的客户端系统提供的功能：新用户注册、个人信息管理、考试时间地点考位查询、考试报名、成绩查询。
+
+供ETS管理员使用的服务器端系统提供的功能有：考试信息发布、题库维护、试题成型、试卷分发及测试、试卷批改。
+
+
+\section{条件与限制}
+本系统使用的技术约束如下：
+
+编程语言：
+
+1、前端：HTML+CSS+Javascript
+
+2、后端：C++
+
+接口：
+
+1、操作系统：服务器端：Windows 2012 Server，客户端：支持浏览器的主流操作系统（Windows 7/8/8.1/10, Ubuntu等）
+	
+2、数据库：Oracle Database 12c 企业版
+	
+3、集成开发环境：Visual Studio 2015
+	
+4、库：ADO
+	
+5、通信：浏览器（HTTPS）
+	
+6、编程规范：参见《ETS考试报名、缴费与考场管理系统开发编程规范》中的具体说明。
+
